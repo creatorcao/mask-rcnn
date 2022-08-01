@@ -26,6 +26,7 @@ Steps are:
     └> Worker fail to boot.
     In the same folder, modify the _docker-compose.yml_ file -> **- FILE_WATCHER=** (remove **True**)
     
-7. **System Preferences** -> **Sharing** -> - [x] **AirPlay Receiver** (!uncheck this)
+7. **System Preferences** -> **Sharing** -> 
+- [x] **AirPlay Receiver** (!uncheck this)
     
 <!-- Updated on Aug 1, 2022 -->

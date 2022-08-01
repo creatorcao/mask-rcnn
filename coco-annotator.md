@@ -1,6 +1,10 @@
-# share my experience of using coco-annotator in mac m1
+**The best image annotation tool -- COCO Annotator**
 
-I used LabelMe before for the data annotation and then train it in Mask-RCNN or Detectron2.
+This post is the instruction for installing COCO Annotator on Mac M1.
+
+I tried many labelling tools and then chose LabelMe before for its eary interface for the beginners 
+
+the data annotation and then train it in Mask-RCNN or Detectron2.
 But I realize that LabelMe is only beginner friendly and actually not efficient at all. 
 I need a more fast and effective label tool to annotate large data.
 I read a blog using coco-annotator, the interface looked nice and convinient. 
@@ -20,8 +24,10 @@ steps are:
 3. brew install docker-compose
 --------------------------------
 3. brew install --cask docker✅
-4. docker-compose up -> is running? 
-5. Privacy -> File Sharing -> uncheck
+4. '''docker-compose up'''
+└> Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
+
+6. Privacy -> File Sharing -> uncheck
 -------------------------------------
 6. docker-compose up -> Worker fail to boot
 7. .yml -> remove **True**

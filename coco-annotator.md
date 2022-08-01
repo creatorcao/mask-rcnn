@@ -2,16 +2,15 @@
 
 ![COCO Annotator](https://camo.githubusercontent.com/69ce7a40db8bdee3e2a292950b5d84cd3f60cc8ac32bdce3316e40ca4130a71d/68747470733a2f2f692e696d6775722e636f6d2f414137496462512e706e67)
 
-This post is the instruction for installing [COCO Annotator](https://github.com/jsbroks/coco-annotator) on Mac M1.
+This post is the instruction for installing [COCO Annotator](https://github.com/jsbroks/coco-annotator) on Macbook M1.
 
-I tried many labelling tools and then chose Labelme because it's friendly to the beginners. 
+I tried many labelling tools and then chose [Labelme](https://github.com/wkentaro/labelme) because it's friendly to the beginners. 
+I tried two ways to install Labelme: to install the _app_ in your Macbook or through `conda/pip install` and then started with Python. 
 
-One of the problems in LabelMe is it's not flexible and quite slow to open.
-the data annotation and then train it in Mask-RCNN or Detectron2.
-But I realize that LabelMe is only beginner friendly and actually not efficient at all. 
-I need a more fast and effective label tool to annotate large data.
-I read a blog using coco-annotator, the interface looked nice and convinient. 
-So I started to install it in my macbook.
+One of the problems in LabelMe is it's not flexible and quite slow to open, I want to be more efficient to annotate image. 
+
+And onetime I saw a blog mentioned using [COCO Annotator](https://github.com/jsbroks/coco-annotator), I was immediately attracted by its multiple functions and quick annotation style. But the install process is struggling. 
+Below is the problems I encountered when I start to install it. Hope this blog could help you. 
 
 BUT it's not a software, and I never try to use Docker before. 
 I followed the official tutorial but worked very slowly.
@@ -22,17 +21,13 @@ Try to use brew install also failed.
 
 steps are:
 1. Docker.app -> create new env -> git repo -> Error, File Sharing
----------------------------------
 2. `brew install docker`
 3. `brew install docker-compose`
---------------------------------
-3. `brew install --cask docker` ✅
-4. `docker-compose up`
+4. `brew install --cask docker` ✅
+5. `docker-compose up`
 └> Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
-
 6. Privacy -> File Sharing -> uncheck
--------------------------------------
-6. docker-compose up -> Worker fail to boot
-7. .yml -> remove **True**
+7. docker-compose up -> Worker fail to boot
+8. .yml -> remove **True**
 
 <!-- Updated on Aug 1, 2022 -->

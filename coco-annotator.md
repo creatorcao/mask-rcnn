@@ -18,18 +18,20 @@ I downloaded the Desktop Docker.app at first to cut some time implement it in my
 The app run slowly and then I uninstalled it. 
 
 steps are:
-1. Firstly I directly download the [Docker.app](https://www.docker.com/products/docker-desktop/) from its official website, register a new account and then to create a new environment, input the git repo. If I try `docker-compose up` in my laptop Terminal, it showed **Error -> File Sharing**. 
 
-Then I try to find out the File Sharing set-up, but noting changed if I try to use the docker. 
-└> -> 
-3. 
-4. `brew install docker`
-5. `brew install docker-compose`
-6. `brew install --cask docker` ✅
-7. `docker-compose up`
-└> Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
-6. Privacy -> File Sharing -> uncheck
-7. docker-compose up -> Worker fail to boot
-8. .yml -> remove **True**
+1. Firstly I directly downloaded the [Docker.app](https://www.docker.com/products/docker-desktop/) from its official website, registered a new account and then to create a new environment, input the coco-annotator git repo. If I try `docker-compose up` in my laptop Terminal, it showed **Error -> File Sharing** related. Then I try to find out the **File Sharing** set-up, but still nothing changed. 
 
+2. `brew install docker` or `brew install docker-compose` ❌
+3. `brew install --cask docker` ✅ # This means to install the app in your laptop.
+
+
+4. Then `docker -v` to check if installed sucessfully, if no response, manually start your Docker.app in Application
+5. `docker-compose up` 
+    └> _Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running? 
+    _This means a project is ready running in you Docker.app, just restart. 
+
+6. `docker-compose up` 
+    └> Worker fail to boot.
+    In the same folder, modify the _docker-compose.yml_ file -> **- FILE_WATCHER=** (remove **True**)
+    
 <!-- Updated on Aug 1, 2022 -->

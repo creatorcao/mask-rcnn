@@ -4,18 +4,18 @@
 
 This post is the instruction for installing [COCO Annotator](https://github.com/jsbroks/coco-annotator) on Macbook M1.
 
+
 I tried many labelling tools and then chose [Labelme](https://github.com/wkentaro/labelme) because it's friendly to the beginners. 
 I tried two ways to install Labelme: to install the _app_ in your Macbook or through `conda/pip install` and then started with Python. 
 
-One of the problems in LabelMe is it's not flexible and quite slow to open, I want to be more efficient to annotate image. 
+One of the problems in [Labelme](https://github.com/wkentaro/labelme) is that it's not flexible and quite slow to open, I want to be more efficient to annotate image. 
 
-And onetime I saw a blog mentioned using [COCO Annotator](https://github.com/jsbroks/coco-annotator), I was immediately attracted by its multiple functions and quick annotation style. But the install process is struggling. 
-Below is the problems I encountered when I start to install it. Hope this blog could help you. 
+And onetime I saw a blog mentioned using [COCO Annotator](https://github.com/jsbroks/coco-annotator), I was immediately attracted by its multiple functions and quick annotation style. But the install process is struggling. Like,
+- not a software
+- needs Docker 
 
-BUT it's not a software, and I never try to use Docker before. 
-I followed the official tutorial but worked very slowly.
-I downloaded the Desktop Docker.app at first to cut some time implement it in my Terminal.
-The app run slowly and then I uninstalled it. 
+I followed the official tutorial but worked very slowly. I downloaded the Desktop Docker.app at first to cut some time implement it in my Terminal.
+The app run slowly and then I uninstalled it. Below is the problems I encountered when installing it. Hope this blog could help you. 
 
 steps are:
 

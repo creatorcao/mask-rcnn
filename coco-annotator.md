@@ -17,14 +17,16 @@ I followed the official tutorial but worked very slowly.
 I downloaded the Desktop Docker.app at first to cut some time implement it in my Terminal.
 The app run slowly and then I uninstalled it. 
 
-Try to use brew install also failed. 
-
 steps are:
-1. Docker.app -> create new env -> git repo -> Error, File Sharing
-2. `brew install docker`
-3. `brew install docker-compose`
-4. `brew install --cask docker` ✅
-5. `docker-compose up`
+1. Firstly I directly download the [Docker.app](https://www.docker.com/products/docker-desktop/) from its official website, register a new account and then to create a new environment, input the git repo. If I try `docker-compose up` in my laptop Terminal, it showed **Error -> File Sharing**. 
+
+Then I try to find out the File Sharing set-up, but noting changed if I try to use the docker. 
+└> -> 
+3. 
+4. `brew install docker`
+5. `brew install docker-compose`
+6. `brew install --cask docker` ✅
+7. `docker-compose up`
 └> Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
 6. Privacy -> File Sharing -> uncheck
 7. docker-compose up -> Worker fail to boot

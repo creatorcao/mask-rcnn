@@ -20,11 +20,11 @@ Try to use brew install also failed.
 steps are:
 1. Docker.app -> create new env -> git repo -> Error, File Sharing
 ---------------------------------
-2. brew install docker
-3. brew install docker-compose
+2. `brew install docker`
+3. `brew install docker-compose`
 --------------------------------
-3. brew install --cask docker✅
-4. '''docker-compose up'''
+3. `brew install --cask docker` ✅
+4. `docker-compose up`
 └> Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
 
 6. Privacy -> File Sharing -> uncheck

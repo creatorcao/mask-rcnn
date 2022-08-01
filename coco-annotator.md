@@ -1,11 +1,12 @@
-# The best image annotation tool -- COCO Annotator
+# The best image annotation tool —— COCO Annotator
 
 ![COCO Annotator](https://camo.githubusercontent.com/69ce7a40db8bdee3e2a292950b5d84cd3f60cc8ac32bdce3316e40ca4130a71d/68747470733a2f2f692e696d6775722e636f6d2f414137496462512e706e67)
 
-This post is the instruction for installing COCO Annotator on Mac M1.
+This post is the instruction for installing [COCO Annotator](https://github.com/jsbroks/coco-annotator) on Mac M1.
 
-I tried many labelling tools and then chose LabelMe before for its eary interface for the beginners 
+I tried many labelling tools and then chose Labelme because it's friendly to the beginners. 
 
+One of the problems in LabelMe is it's not flexible and quite slow to open.
 the data annotation and then train it in Mask-RCNN or Detectron2.
 But I realize that LabelMe is only beginner friendly and actually not efficient at all. 
 I need a more fast and effective label tool to annotate large data.
